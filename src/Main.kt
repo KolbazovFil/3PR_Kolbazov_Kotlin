@@ -126,42 +126,66 @@ fun main() {
 //    }
 //
 //// -----------------------------------------------------------------------------------------------------------------------------------------------------------
-//10. Работа с коллекциями: Университет
-   println("\nЗадание 10: Создайте класс Student с полями name, group, grade. Создайте класс University, " +
-           "который содержит список студентов и методы для добавления студентов, сортировки по имени и фильтрации по успеваемости.\n")
-
-    val university = University()
-    university.addStudent(Student("Alice", "CS101", 3.8))
-    university.addStudent(Student("Bob", "CS102", 2.5))
-    university.addStudent(Student("Charlie", "CS101", 3.5))
-
-    // Отображение всех студентов
-    println("Список студентов:")
-    university.displayStudents()
-
-    // Сортировка студентов по имени
-    university.sortStudentsByName()
-    println("\nСортированный список студентов по имени:")
-    university.displayStudents()
-
-    // Фильтрация студентов по успеваемости (например, от 3.0 и выше)
-    val filteredStudents = university.filterStudentsByGrade(3.0)
-    println("\nСтуденты с успеваемостью 3.0 и выше:")
-    for (student in filteredStudents) {
-        println("Имя: ${student.name}, Группа: ${student.group}, Успеваемость: ${student.grade}")
-    }
-
-
+////10. Работа с коллекциями: Университет
+//   println("\nЗадание 10: Создайте класс Student с полями name, group, grade. Создайте класс University, " +
+//           "который содержит список студентов и методы для добавления студентов, сортировки по имени и фильтрации по успеваемости.\n")
+//    // Добавление студентов
+//    val university = University()
+//    university.addStudent(Student("Стас", "A54", 3.8))
+//    university.addStudent(Student("Боби", "B99", 2.5))
+//    university.addStudent(Student("Лев", "B99", 3.5))
+//    // Отображение всех студентов
+//    println("Список студентов:")
+//    university.displayStudents()
+//    // Сортировка студентов по имени
+//    university.sortStudentsByName()
+//    println("\nСортированный список студентов по имени:")
+//    university.displayStudents()
+//    // Фильтрация студентов по успеваемости (например, от 3.0 и выше)
+//    val filteredStudents = university.filterStudentsByGrade(3.5)
+//    println("\nСтуденты с успеваемостью 3.0 и выше:")
+//    for (student in filteredStudents) {
+//        println("Имя: ${student.name}, Группа: ${student.group}, Успеваемость: ${student.grade}")
+//    }
+//// -----------------------------------------------------------------------------------------------------------------------------------------------------------
+////11. Класс "Магазин"
+// println(
+//  "\nЗадание 11: Реализуйте класс Product с полями name, price, и quantity. Создайте класс Store, " +
+//          "который содержит список продуктов и методы для добавления, удаления и поиска товаров по имени.\n"
+// )
+// val store = Store()
+//
+// val apple = Product("Яблоко", 0.10, 1)
+// val banana = Product("Банан", 0.15, 1)
+// val pineapple = Product("Ананас", 5.14, 1)
+//
+// store.addProduct(apple)
+// store.addProduct(banana)
+// store.addProduct(pineapple)
+//
+// store.displayProducts()
+//
+// // Поиск продукта
+// val foundProduct = store.findProductByName("Ананас")
+// if (foundProduct != null) {
+//  println("\nНайденный продукт: ${foundProduct.name}, Цена - ${foundProduct.price}, Количество - ${foundProduct.quantity}\n")
+// } else {
+//  println("Продукт не найден.")
+// }
+//
+// // Удаление продукта
+// val isRemoved = store.removeProductByName("Банан")
+// println("Продукт удален: $isRemoved\n")
+//
+// store.displayProducts()
+//// -----------------------------------------------------------------------------------------------------------------------------------------------------------
+////12. Интерфейс "Платежная система"
+println("\nЗадание 12: Создайте интерфейс PaymentSystem с методами pay() и refund(). " +
+        "Реализуйте классы CreditCard и PayPal, которые реализуют этот интерфейс.\n")
 
 
 }
 
-//11. Класс "Магазин"
-//Реализуйте класс Product с полями name, price, и quantity. Создайте класс Store, который содержит список продуктов и методы для добавления, удаления и поиска товаров по имени.
-//
-//12. Интерфейс "Платежная система"
-//Создайте интерфейс PaymentSystem с методами pay() и refund(). Реализуйте классы CreditCard и PayPal, которые реализуют этот интерфейс.
-//
 //13. Генерация уникальных идентификаторов
 //Создайте класс UniqueID, который генерирует уникальные идентификаторы для объектов каждого созданного класса. Реализуйте этот функционал через статическое поле и метод.
 //
